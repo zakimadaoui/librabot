@@ -4,7 +4,8 @@ This is a self balancing robot project that includes:
 * arduino code
 * CoppeliaSim simulation 
 * an android app used to control the robot
-* 
+
+
 ## Android app screenshots
 ![libraBot app](Android app/libraBanner.png)
 
