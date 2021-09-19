@@ -7,7 +7,7 @@ This is a self balancing robot project that includes:
 
 
 ## Android app screenshots
-![libraBot app](Android app/libraBanner.png)
+![libraBot app](LibraBot_Android_app/libraBanner.png)
 
 ## Demo video
 [![libraBot demo](https://img.youtube.com/vi/EUr83Bnvw0s/0.jpg)](https://www.youtube.com/watch?v=EUr83Bnvw0s)
