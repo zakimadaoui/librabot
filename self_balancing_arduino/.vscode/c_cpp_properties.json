@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/zaki/Programs/arduino-1.8.13/hardware/arduino/avr/libraries/Wire/src/**",
+                "/home/zaki/Arduino/libraries/**",
+                "/home/zaki/Programs/arduino-1.8.8/libraries/**",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/**",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include",
+                "/usr/local/include/**",
+                "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c18",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

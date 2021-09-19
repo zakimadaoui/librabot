@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControllerActivity">
+
+    <com.example.pidbbotcontroller.Joystick
+        android:id="@+id/joystick"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="16dp"
+        app:JoystickColor="#42A5F5"
+        app:ballRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:outerCircleThickness="5dp" />
+
+    <TextView
+        android:id="@+id/px_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant"
+        android:text="Move : 0.0"
+        android:textColor="#353535"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/py_txtvw"
+        app:layout_constraintEnd_toStartOf="@+id/py_txtvw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/joystick" />
+
+    <TextView
+        android:id="@+id/py_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/assistant"
+        android:text="Steer: 0.0"
+        android:textColor="#353535"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/joystick"
+        app:layout_constraintEnd_toEndOf="@+id/joystick"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/px_txtvw" />
+
+    <TextView
+        android:id="@+id/p_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant"
+        android:text="P: 050"
+        android:textColor="#353535"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/i_txtvw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/i_txtvw" />
+
+    <TextView
+        android:id="@+id/i_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/assistant"
+        android:text="I: 150"
+        android:textColor="#353535"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toStartOf="@+id/d_txtvw"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/p_txtvw"
+        app:layout_constraintTop_toBottomOf="@+id/start_button" />
+
+    <TextView
+        android:id="@+id/d_txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant"
+        android:text="D: 002"
+        android:textColor="#353535"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/i_txtvw"
+        app:layout_constraintTop_toTopOf="@+id/i_txtvw" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        app:backgroundTint="#66BB6A"
+        app:layout_constraintEnd_toStartOf="@+id/terminal_button"
+        app:layout_constraintTop_toTopOf="@+id/terminal_button"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/terminal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="#555555"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/ic_terminal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/material_semi_circle"
+        android:fontFamily="@font/cabin"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="LibraController"
+        android:textColor="@color/Dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#00FFFFFF"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <com.example.pidbbotcontroller.MySeekBar
+        android:id="@+id/p_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:max="255"
+        android:progress="50"
+        android:thumbTint="#FFCA28"
+        app:layout_constraintBottom_toBottomOf="@+id/i_seekbar"
+        app:layout_constraintEnd_toStartOf="@+id/i_seekbar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/i_seekbar" />
+
+    <com.example.pidbbotcontroller.MySeekBar
+        android:id="@+id/i_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:max="255"
+        android:progress="150"
+        android:thumbTint="#FFCA28"
+        app:layout_constraintBottom_toTopOf="@+id/py_txtvw"
+        app:layout_constraintEnd_toStartOf="@+id/d_seekbar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/p_seekbar"
+        app:layout_constraintTop_toBottomOf="@+id/i_txtvw" />
+
+    <com.example.pidbbotcontroller.MySeekBar
+        android:id="@+id/d_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:max="255"
+        android:progress="2"
+        android:thumbTint="#FFCA28"
+        app:layout_constraintBottom_toBottomOf="@+id/i_seekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/i_seekbar"
+        app:layout_constraintTop_toTopOf="@+id/i_seekbar" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:clickable="true"
+        app:backgroundTint="#5C6BC0"
+        app:layout_constraintStart_toEndOf="@+id/terminal_button"
+        app:layout_constraintTop_toTopOf="@+id/terminal_button"
+        app:srcCompat="@drawable/ic_baseline_save_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

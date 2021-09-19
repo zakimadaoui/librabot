@@ -1,0 +1,69 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Parameters">
+
+        <EditTextPreference
+            android:defaultValue="1.05"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="referance_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Referance Angle"
+            app:useSimpleSummaryProvider="false" />
+        <EditTextPreference
+            android:defaultValue="1.05"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="dead_gap_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="DeadGap Angle"
+            app:useSimpleSummaryProvider="false" />
+        <EditTextPreference
+            android:defaultValue="165"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="vmax_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Vmax" />
+        <EditTextPreference
+            android:defaultValue="100"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="imax_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Imax" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="delay_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Loop frequency/delay" />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="kp_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Initial kp" />
+        <EditTextPreference
+            android:defaultValue="50"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="ki_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Initial ki" />
+        <EditTextPreference
+            android:defaultValue="2"
+            android:dialogLayout="@layout/edit_text_layout"
+            android:key="kd_pref"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Initial kd" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Recorded PID configs"></PreferenceCategory>
+
+</PreferenceScreen>
